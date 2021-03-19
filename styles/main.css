@@ -1,0 +1,144 @@
+body {
+    background: rgb(34, 46, 112);
+    padding: 70px 0;
+    font: 8px Arial, sans-serif;
+    overflow-x: hidden;
+  }
+  
+  .container {
+    margin: 100px auto;
+    margin-top: 200px;
+    width: 250px;
+    height: 200px;
+    position: relative;
+    perspective: 1000px;
+  }
+  
+  .carousel {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    
+  }
+  
+  
+  .item {
+    display: block;
+    position: absolute;
+    background: #000;
+    width: 250px;
+    height: 250px;
+    font-size: 5em;
+    text-align: center;
+    color: #FFF;
+    opacity: 0.75;
+    border-radius:150px;
+    line-height: normal;
+    border: 1px solid black;
+   
+   
+  }
+  
+  .a {
+    transform: rotateY(0deg) translateZ(250px);
+    background: #ed1c24;
+    align-content: auto;
+    overflow: hidden;
+    
+  }
+  .b {
+    transform: rotateY(72deg) translateZ(250px);
+    background: #ffffff;
+    align-content: auto;
+    overflow: hidden;
+  
+  }
+  .c {
+    transform: rotateY(144deg) translateZ(250px);
+    background: #39b54a;
+    align-content: auto;
+    overflow: hidden;
+  }
+  .d {
+    transform: rotateY(216deg) translateZ(250px);
+    background: #f26522;
+    align-content: auto;
+    overflow: hidden;
+  }
+
+  .e {
+    transform: rotateY(288deg) translateZ(250px);
+    background: #ee009f;
+    align-content: auto;
+    overflow: hidden;
+  }
+  
+  
+  .next, .prev {
+    color: #444;
+    position: absolute;
+    top: 300px;
+    padding: 1em 2em;
+    cursor: pointer;
+    background: #CCC;
+    border-radius: 5px;
+    border-top: 1px solid #FFF;
+    box-shadow: 0 5px 0 #999;
+    transition: box-shadow 0.1s, top 0.1s;
+  }
+  .next:hover, .prev:hover { 
+    color: #000; 
+  }
+
+  .next:active, .prev:active {
+    top: 304px;
+    box-shadow: 0 1px 0 #999;
+  }
+
+  .next { right: 25em; }
+  .prev { left: 25em; }
+
+  p{
+    margin-top: 80px ;
+    color: rgb(0, 0, 0);
+    position: relative;
+  }
+
+  .item:hover{
+    color: #39b54a;
+    animation-name: opac_color;
+    animation-duration: 1s;
+    animation-delay: 0.1s;
+    animation-fill-mode: both; 
+  }
+  @keyframes opac_color{
+    from{opacity: 0,75;}
+    to{opacity: 1;}   
+  }
+
+.ani_video{
+  position: absolute;;
+  right: -12%;
+  top: -10%;
+}
+
+.pic{
+  max-width: 200%;
+  max-height: 200%;
+  position: absolute;
+  right: -100px;
+}
+
+.head{
+  background-color: #39b54a;
+  height: 10px;
+  margin-top: -90px;
+  margin-left: -10px;
+  margin-right: -10px;
+  max-width: 100%;
+  padding: 10%;
+ 
+}
+

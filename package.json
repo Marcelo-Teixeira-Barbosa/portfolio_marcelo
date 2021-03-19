@@ -1,0 +1,21 @@
+{
+  "name": "tailwind_pratica",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "postcss styles/app.css -o public/app.css ",
+    "prod": "cross-env NODE_ENV=production postcss styles/app.css -o public/app.css "
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.7",
+    "tailwindcss": "^2.0.3"
+  },
+  "dependencies": {
+    "postcss-cli": "^8.3.1",
+    "cross-env": "7.0.3"
+  }
+}
